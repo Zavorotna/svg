@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.forest {
+    margin: 25px;
+    border: 2px dashed #ccc;
+    transition: all 2s ease;
+    animation: forest 5s infinite;
+}
+
+
+
+.circle {
+    background-color: #fcad3a;
+    animation: sun 5s infinite;
+}
+
+@keyframes forest {
+    0% {
+        background-color: #fff;
+    }
+
+    100% {
+        background-color: rgb(23, 23, 36);
+    }
+}
+
+@keyframes sun {
+    0% {
+        transition: all 3s ease-in;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transition: all 3s ease-in;
+        transform: translate(60px, -5px);
+    }
+}
+
