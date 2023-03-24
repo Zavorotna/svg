@@ -6,12 +6,19 @@ body {
     margin: 25px;
     border: 2px dashed #ccc;
     transition: all 2s ease;
-    animation: forest 5s infinite;
+    animation: forest 12s infinite;
+    animation-delay: 2s;
 }
 
 .circle {
     background-color: #fcad3a;
-    animation: sun 5s infinite;
+    animation: sun 10s infinite;
+    animation-delay: 2s;
+}
+
+.tree {
+    animation: tree 12s infinite;
+    animation-delay: 2s;
 }
 
 @keyframes forest {
@@ -36,3 +43,14 @@ body {
     }
 }
 
+@keyframes tree {
+    0% {
+        transition: all 3s ease-in;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transition: all 3s ease-in;
+        transform: translate(-55px, 0);
+    }
+}
