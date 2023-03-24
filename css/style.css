@@ -10,6 +10,10 @@ body {
     animation-delay: 2s;
 }
 
+.moon {
+    fill: #fff;
+}
+
 .circle {
     fill: #fcad3a;
     animation: sun 12s infinite;
